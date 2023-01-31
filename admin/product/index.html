@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-магазин</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="../../index.html">
+            <img src="../../img/logo.svg" alt="Bootstrap" width="30" height="24">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../../admin/index.html">Головна</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../admin/order.html">Замовлення</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Товари</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../admin/category.html">Категорії</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container my-2">
+      <div class="d-flex justify-content-between align-items-center flex-wrap">
+        <h1>Товари</h1>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Добавити товар
+        </button>
+      </div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th>Назва товару</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Принтер №1</td>
+                  <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Змінити
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Принтер №1</td>
+                  <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Змінити
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Принтер №1</td>
+                <td>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Змінити
+                  </button>
+              </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Товар</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             <div class="my-3">
+                <label for="name" class="form-label">Назва товару</label>
+                <input type="text" class="form-control" id="name" placeholder="Назва товару">
+              </div>
+              <select class="form-select" aria-label="Default select example">
+                <option value="1" selected>Категорія №1</option>
+                <option value="2">Категорія №2</option>
+                <option value="3">Категорія №3</option>
+              </select>
+              <div class="my-3">
+                <label for="counts" class="form-label">Кількість</label>
+                <input type="number" class="form-control" id="counts" placeholder="Кількість">
+              </div>
+              <div class="my-3">
+                <label for="price" class="form-label">Ціна</label>
+                <input type="number" class="form-control" id="price" placeholder="Ціна">
+              </div>
+              <div class="my-3">
+                <label for="country" class="form-label">Країна-виробник</label>
+                <input type="text" class="form-control" id="country" placeholder="Країна-виробник">
+              </div>
+              <div class="my-3">
+                <label for="year" class="form-label">Рік випуску</label>
+                <input type="number" class="form-control" id="year" placeholder="Рік випуску">
+              </div>
+              <div class="my-3">
+                <label for="model" class="form-label">Модель</label>
+                <input type="text" class="form-control" id="model" placeholder="Модель">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+              <button type="button" class="btn btn-primary">Зберегти</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
